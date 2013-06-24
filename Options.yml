@@ -1,0 +1,75 @@
+Numberofblocks: 100
+SpawnLower: 4
+Delay: 2
+Easy:
+  Boost: 1
+  Lives: 3
+  Levels: 5
+  Level:
+  - Wave1,Wave2,Wave3
+  - Wave1,Wave2,Wave3
+  - Wave1,Wave2,Wave3
+  - Wave1,Wave2,Wave3
+  - Wave1,Wave2,Wave3
+  Reward:
+  - 289:0:16 1
+  - 351:1:5 1
+  - 369:360:64 1
+  - 265:0:16 1
+  - BloodSword 1
+  - PrizeEgg 1
+  - 298:0:1 0.5
+  - 299:0:1 0.5
+  - 300:0:1 0.5
+  - 301:0:1 0.5
+Normal:
+  Boost: 1.5
+  Lives: 3
+  Levels: 7
+  Level:
+  - Wave2
+  - Wave2
+  - Wave2
+  - Wave2
+  - Wave2
+  - Wave2
+  - Wave2
+  Reward:
+  - 289:0:16 1
+  - 351:1:5 1
+  - 369:360:64 1
+  - 265:0:16 1
+  - BloodSword 1
+  - PrizeEgg 1
+  - 298:0:1 0.5
+  - 299:0:1 0.5
+  - 300:0:1 0.5
+  - 301:0:1 0.5
+Hard:
+  Boost: 2
+  Lives: 3
+  Levels: 12
+  Level:
+  - Wave1
+  - Wave1
+  - Wave1
+  - Wave2
+  - Wave2
+  - Wave2
+  - Wave2
+  - Wave3
+  - Wave3
+  - Wave3
+  - Wave3
+  - Wave3
+  Reward:
+  - 289:0:16 1
+  - 351:1:5 1
+  - 369:360:64 1
+  - 265:0:16 1
+  - BloodSword 1
+  - PrizeEgg 1
+  - 298:0:1 0.5
+  - 299:0:1 0.5
+  - 300:0:1 0.5
+  - 301:0:1 0.5

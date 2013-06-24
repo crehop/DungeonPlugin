@@ -1,0 +1,25 @@
+name: Dungeon
+main: me.ThaH3lper.com.Dungeon
+version: 1.0
+depend: [MobLibrary]
+description: >
+             Test. invis plugin
+commands:
+    party:
+      aliases: [p]
+    dungeon:
+      aliases: [d]
+      
+permissions:
+  Dungeon.Admin:
+    description: Gives access to all Admin commands!
+    default: op
+  Dungeon.Use:
+    description: Gives access to use portals!
+    default: op
+  Dungeon.Passby:
+    description: Passby Full party and TimeLimit
+    default: op
+  Dungeon.Nolife:
+    description: makes u able to not lose lives
+    default: op

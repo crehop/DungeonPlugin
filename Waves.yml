@@ -1,0 +1,13 @@
+Wave1:
+- Stest:5,test:5
+Wave2:
+- Szombie:5
+- Stest:10,test:5
+- Szombie:5
+- Stest:10,test:5
+Wave3:
+- Stest:2,test:2
+- Stest:2,test:2
+- Stest:2,test:2
+- Stest:2,test:2
+- Szombie:1
