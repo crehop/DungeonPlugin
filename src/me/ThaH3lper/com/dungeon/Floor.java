@@ -2,32 +2,28 @@ package me.ThaH3lper.com.dungeon;
 
 import java.util.List;
 
-import javax.swing.text.DefaultEditorKit.PasteAction;
-
 import me.ThaH3lper.com.Dungeon;
 import me.ThaH3lper.com.Effects.ParticleEffect;
 
-import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 
 public class Floor {
 
 	public Cuboid cuboID;
-	private Tower tower;
+	//private Tower tower;
 	private TempletFloor tf;
 	Dungeon dun;
 	List<Block> list2, list;
 	
-	private int Level;
+	//private int Level;
 	
 	public Floor(Cuboid cuboid, Tower tower, int level, TempletFloor tf, Dungeon dun)
 	{
 		this.dun = dun;
 		this.cuboID = cuboid;
-		this.tower = tower;
-		this.Level = level;
+		//this.tower = tower;
+		//this.Level = level;
 		this.tf = tf;
 		list = cuboID.getBlocks();
 		if(tf != null)

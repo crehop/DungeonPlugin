@@ -2,7 +2,6 @@ package me.ThaH3lper.com;
 
 import java.util.Date;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Arrow;
@@ -36,6 +35,7 @@ public class PlayerListener implements Listener
 	
 	
 	
+  @SuppressWarnings("deprecation")
   @EventHandler
   public void onPlayerItemConsumeEvent(PlayerItemConsumeEvent event)
   {
@@ -106,6 +106,7 @@ public class PlayerListener implements Listener
     }
   }
 
+  @SuppressWarnings("deprecation")
   @EventHandler
   public void onPlayerItemHeldEvent(PlayerItemHeldEvent event)
   {

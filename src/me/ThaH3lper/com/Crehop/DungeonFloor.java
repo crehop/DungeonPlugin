@@ -1,41 +1,30 @@
 package me.ThaH3lper.com.Crehop;
 
-import java.awt.Color;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 import me.ThaH3lper.com.Dungeon;
 import me.ThaH3lper.com.DungeonPlayer;
 import me.ThaH3lper.com.Grades.Grade;
 import me.ThaH3lper.com.Grades.Wave;
-import me.ThaH3lper.com.Portals.Portal;
 import me.ThaH3lper.com.Reward.Rewards;
-import me.ThaH3lper.com.dungeon.Floor;
 import me.ThaH3lper.com.dungeon.Tower;
 import me.ThaH3lper.com.party.Party;
-import net.minecraft.server.v1_5_R3.ItemSaddle;
-import net.minecraft.server.v1_5_R3.PlayerInventory;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.inventory.InventoryType;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scoreboard.Scoreboard;
 import org.bukkit.scoreboard.ScoreboardManager;
-import org.bukkit.scoreboard.Team;
 
 
-public class DungeonFloor {
-	private Random random = new Random();
+public class DungeonFloor
+{
 	private int mobsPerFloor;
 	private int mobsLeft;
 	private int teamLives;
@@ -72,14 +61,15 @@ public class DungeonFloor {
 			dungeonTeam.add(dp.getPlayer());
 		}
 		
-		ScoreboardMaker.newObjective();
-		for(Player all:dungeonTeam){
+		//ScoreboardMaker.newObjective();
+		for(Player all:dungeonTeam)
+		{
 			ScoreboardMaker.createScoreboard(all);
 			ScoreboardMaker.setScore(all,1);
 		}
 		floor = 1;
 		wave = 0;
-		ScoreboardMaker.setDungeonFloor(floor, totalFloors);
+		ScoreboardMaker.setDungeonFloor(p, floor, totalFloors);
 		SendMessage(prefix + ChatColor.GREEN + " Good luck!");
 		
 		scedual = dun.getServer().getScheduler().scheduleSyncRepeatingTask(dun, new Runnable() {
@@ -133,7 +123,7 @@ public class DungeonFloor {
 		for(Player all: dungeonTeam){
 				all.teleport(dun.exit);
 			}
-			ScoreboardMaker.removeScoreboards();
+			ScoreboardMaker.removeScoreboards(party);
 			if(prize)
 			{
 				prize();
@@ -192,7 +182,7 @@ public class DungeonFloor {
 			SendMessage(prefixf + ChatColor.GREEN + " Floor Completed!");
 			tower.floors.get(floor - 1).open(); //Open Gate
 			floor++;
-			ScoreboardMaker.setDungeonFloor(floor, totalFloors);
+			ScoreboardMaker.setDungeonFloor(party, floor, totalFloors);
 
 			Wave mobWave = grade.getWaveForLevel(floor);
 			mobs = mobWave.getList();

@@ -9,7 +9,6 @@ import me.ThaH3lper.com.DungeonPlayer;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.scheduler.BukkitScheduler;
 
 public class Party
 {

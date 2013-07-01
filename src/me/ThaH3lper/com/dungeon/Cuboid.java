@@ -14,11 +14,11 @@ public class Cuboid {
 	private Location minLoc;
 	private Location maxLoc;
 	
-	private Dungeon dun;
+	//private Dungeon dun;
 	
 	public Cuboid(Location l1, Location l2, Dungeon dun)
 	{
-		this.dun = dun;
+		//this.dun = dun;
 		
 		int x1, y1, z1;
 		int x2, y2, z2;

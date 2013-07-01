@@ -2,7 +2,6 @@
  
  import java.util.ArrayList;
  import java.util.List;
- import org.bukkit.configuration.file.FileConfiguration;
  import org.bukkit.entity.Player;
  
  public class DungeonHandler

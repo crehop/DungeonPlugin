@@ -19,7 +19,6 @@ import me.ThaH3lper.com.dungeon.commands.CommandHandle;
 import me.ThaH3lper.com.party.CommandParty;
 import me.ThaH3lper.com.party.PartyListener;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;

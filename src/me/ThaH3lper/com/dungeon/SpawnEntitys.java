@@ -11,17 +11,16 @@ import org.bukkit.entity.LivingEntity;
 import me.ThaH3lper.com.Dungeon;
 import me.ThaH3lper.com.MobLibrary;
 import me.ThaH3lper.com.Crehop.DungeonFloor;
-import me.ThaH3lper.com.Entitys.MobTemplet;
 
 public class SpawnEntitys {
 	
-	private Dungeon dun;
+	//private Dungeon dun;
 	MobLibrary mb;
 	Random r = new Random();
 	
 	public SpawnEntitys(Dungeon dun)
 	{
-		this.dun = dun;
+		//this.dun = dun;
 		mb = (MobLibrary) Bukkit.getPluginManager().getPlugin("MobLibrary");
 	}
 	

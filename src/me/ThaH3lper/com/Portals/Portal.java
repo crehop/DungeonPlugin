@@ -7,7 +7,6 @@ import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 
 import me.ThaH3lper.com.dungeon.Cuboid;
-import me.ThaH3lper.com.dungeon.Tower;
 
 public class Portal {
 	

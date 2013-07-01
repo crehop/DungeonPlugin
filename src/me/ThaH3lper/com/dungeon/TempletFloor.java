@@ -2,7 +2,6 @@ package me.ThaH3lper.com.dungeon;
 
 import me.ThaH3lper.com.Dungeon;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 
 public class TempletFloor {

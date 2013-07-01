@@ -5,15 +5,12 @@ import java.util.Random;
 import me.ThaH3lper.com.Dungeon;
 import me.ThaH3lper.com.DungeonHandler;
 import me.ThaH3lper.com.DungeonPlayer;
-import me.ThaH3lper.com.dungeon.Floor;
 import me.ThaH3lper.com.dungeon.TempletFloor;
 import me.ThaH3lper.com.dungeon.Tower;
 import me.ThaH3lper.com.party.Party;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
-import org.bukkit.block.Block;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
